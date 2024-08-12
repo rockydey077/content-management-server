@@ -6,7 +6,11 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 app.use(express.json());
-app.use(cors({ origin: ["http://localhost:5173"] }));
+app.use(
+  cors({
+    origin: ["http://localhost:5173", "https://tech-hub-content.netlify.app"],
+  })
+);
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.gmvuq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 
