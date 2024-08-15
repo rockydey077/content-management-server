@@ -12,6 +12,7 @@ app.use(
       "http://localhost:5173",
       "https://tech-hub-content.netlify.app",
       "http://localhost:3000",
+      "https://tech-blogs-live.netlify.app",
     ],
   })
 );
